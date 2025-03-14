@@ -39,7 +39,6 @@ draw = function(){
        sceneText = "Marinette: OMG ADRIEN! \n[Press a to talk to Adrien]";
      } 
 
-    // Luka's Path
     if(key == 'l'){  
        sceneImage = loadImage("https://cdn.glitch.global/0dad7052-e9f3-462b-8269-542c4e74e399/9BC9D732-4FC7-43B3-A693-16155E889479.jpeg?v=1741272199063");    
        sceneText = "Marinette: Oh no! Luka got akumatized! \n[Press c to continue]";
@@ -93,4 +92,31 @@ var drawScene = function() {
     textSize(20);
 
     text(sceneText, 10, 375);
+    
+ if(sceneText== "TIKKI SPOTS ON! \n[Press v to victory]"){     
+ if(mousePressed){ text ("🐞", random(0,600), random(0,400));
+ }
+ }
+if(sceneText== "Adrien has been akumatized?! \n[Press e to engage]"){
+
+drawPig(330,200)
+}      
+ 
+    
+    
+    
+    
+    
+    
 };
+
+
+
+var drawPig = function(pigX, pigY, pigColor){
+textSize(100);
+fill(pigColor);
+text("🐷", pigX, pigY);
+
+
+
+}
