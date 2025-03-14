@@ -93,12 +93,15 @@ var drawScene = function() {
 
     text(sceneText, 10, 375);
     
- if(sceneText=="TIKKI SPOTS ON! [Press v to victory]"){     
+ if(sceneText== "TIKKI SPOTS ON! \n[Press v to victory]"){     
  if(mousePressed){ text ("🐞", random(0,600), random(0,400));
  }
- 
- 
  }
+if(sceneText== "Adrien has been akumatized?! \n[Press e to engage]"){
+
+drawPig(330,200)
+}      
+ 
     
     
     
@@ -106,3 +109,14 @@ var drawScene = function() {
     
     
 };
+
+
+
+var drawPig = function(pigX, pigY, pigColor){
+textSize(100);
+fill(pigColor);
+text("🐷", pigX, pigY);
+
+
+
+}
